@@ -1,0 +1,174 @@
+% Architecture schematic from the paper; measured data are not used.
+% Palette is supplied by figure1.py; original TikZ geometry is retained.
+\colorlet{archCoreA}{archK2Fill}          \colorlet{archCoreAStroke}{archK2}       % pass 1 -- the stored core
+\colorlet{archCoreB}{archDepFill}         \colorlet{archCoreBStroke}{archDep}      % pass 2 -- fresh weights (dep only)
+\colorlet{archCoreC}{archGrowK2Fill}      \colorlet{archCoreCStroke}{archGrowK2}   % pass 3 -- copied, then untied (dep grow only)
+\colorlet{archCoreD}{archGrowDepFill}     \colorlet{archCoreDStroke}{archGrowDep}  % pass 4 -- copied, then untied (dep grow only)
+
+% ---------------------------------------------------------------- geometry
+\newcommand{\archBW}{1.15}       % block width
+\newcommand{\archBH}{0.32}       % block height
+\newcommand{\archGap}{0.08}      % plain inter-block gap
+\newcommand{\archSeam}{0.40}     % wider gap at a loop seam, to hold the oplus
+\newcommand{\archHalfSeam}{0.20}
+\newcommand{\archBusX}{0.83}     % anchor bus, right of the stack
+\newcommand{\archArrow}{0.34}    % length of the in/out stream arrows
+% Panel-to-panel spacing. The picture is drawn at final size (no \scalebox), so
+% this is what keeps it inside the 5.5in ICLR text block -- widen it and the
+% figure overfulls the \hbox. Re-check with a trial build after any change.
+\newcommand{\archPitch}{2.30}    % panel-to-panel spacing
+
+% Shared title and annotation rows. \archBaseY changes per panel so unequal-height
+% stacks are vertically centered in the same drawing area.
+\newcommand{\archYleff}{-0.95}
+\newcommand{\archYstored}{-1.42}
+\newcommand{\archYlegend}{-2.00}
+\newcommand{\archYsub}{6.56}
+\newcommand{\archYtitle}{6.98}
+\newcommand{\archBaseY}{0}
+
+% ---------------------------------------------------------------- styles
+\tikzset{
+  archblk/.style      = {draw=archInk, line width=0.55pt, rounded corners=0.8pt,
+                         minimum width=\archBW cm, minimum height=\archBH cm,
+                         inner sep=0pt, outer sep=0pt,
+                         font=\scriptsize, text=archInk},
+  archstream/.style   = {draw=archInk, line width=0.7pt,
+                         -{Stealth[length=3pt, width=2.6pt]}},
+  archoplus/.style    = {circle, draw=archWire, fill=white, line width=0.5pt,
+                         inner sep=0pt, minimum size=0.26cm},
+  archcross/.style    = {draw=archWire, line width=0.5pt},
+  archwire/.style     = {draw=archWire, line width=0.55pt},
+  archwirearrow/.style= {draw=archWire, line width=0.55pt,
+                         -{Stealth[length=2.6pt, width=2.4pt]}},
+  archstage/.style    = {draw=archMuted, line width=0.5pt, decorate,
+                         decoration={brace, amplitude=2.2pt}},
+  archstagelab/.style = {rotate=90, anchor=south, font=\scriptsize, text=archMuted},
+  archtitle/.style    = {anchor=base, font=\normalsize\bfseries},
+  archsub/.style      = {anchor=base, font=\scriptsize, text=archMuted},
+  archleff/.style     = {anchor=base, font=\normalsize, text=archInk},
+  archstored/.style   = {anchor=base, font=\footnotesize, text=archMuted},
+}
+
+% A core block carries its index; 0 means an unlabelled prelude/coda block.
+\newcommand{\archlab}[1]{\ifnum#1>0 $C_{#1}$\fi}
+
+% ---------------------------------------------------------------- one panel
+% #1 x of the stack centre   #2 node-name prefix   #3 title   #4 title colour
+% #5 subtitle (may be empty) #6 rows, bottom->top, as "fill/coreindex/seamabove"
+% #7 \ell_eff                #8 stored blocks
+\newcommand{\archpanel}[8]{%
+  \gdef\archTopSeam{}%
+  % --- the stack: each row sits above the previous one, with a wider gap
+  %     (and an oplus in it) wherever the previous row closed a core pass.
+  \foreach \af/\al/\as [count=\ai, remember=\as as \aprev (initially 0)] in {#6}{%
+    \pgfmathsetmacro{\archThisGap}{ifthenelse(\aprev>0,\archSeam,\archGap)}%
+    \ifnum\ai=1
+      \node[archblk, fill=\af, anchor=south] (#2-1) at (#1,\archBaseY) {\archlab{\al}};
+    \else
+      \pgfmathtruncatemacro{\archBelow}{\ai-1}%
+      \node[archblk, fill=\af, above=\archThisGap cm of #2-\archBelow]
+           (#2-\ai) {\archlab{\al}};
+    \fi
+    \xdef\archTop{#2-\ai}%
+    \ifnum\as>0
+      \node[archoplus] (#2-s\ai) at ([yshift=\archHalfSeam cm]#2-\ai.north) {};
+      \draw[archcross] ([xshift=-0.062cm]#2-s\ai.center) -- ([xshift=0.062cm]#2-s\ai.center);
+      \draw[archcross] ([yshift=-0.062cm]#2-s\ai.center) -- ([yshift=0.062cm]#2-s\ai.center);
+      \xdef\archTopSeam{#2-s\ai}%
+    \fi
+  }%
+  % --- embeddings in at the bottom, logits out at the top
+  \draw[archstream] ([yshift=-\archArrow cm]#2-1.south) -- (#2-1.south);
+  \draw[archstream] (\archTop.north) -- ([yshift=\archArrow cm]\archTop.north);
+  % --- the post-prelude anchor A: tapped above block 2, bussed right, then up
+  %     into every oplus. Vanilla has no seam, hence no bus.
+  \ifx\archTopSeam\empty\else
+    \coordinate (#2-tap) at (#2-2.east);
+    \coordinate (#2-bus) at ([xshift=\archBusX cm]#2-1.south);
+    \coordinate (#2-hi)  at (\archTopSeam);
+    \coordinate (#2-abus) at (#2-tap -| #2-bus);
+    \draw[archwire] (#2-tap) -- (#2-abus) -- (#2-hi -| #2-bus);
+    \fill[archWire] (#2-tap) circle (0.042);
+    \node[anchor=west, font=\small, text=archWire] at ([xshift=0.07cm]#2-abus) {$e$};
+    \foreach \af/\al/\as [count=\ai] in {#6}{%
+      \ifnum\as>0 \draw[archwirearrow] (#2-s\ai -| #2-bus) -- (#2-s\ai); \fi
+    }%
+  \fi
+  % --- card layout: titles top-aligned, diagrams center-aligned, metrics bottom-aligned
+  \node[archtitle, text=#4] at (#1,\archYtitle) {#3};
+  \node[archsub]           at (#1,\archYsub) {#5};
+  \node[archleff]          at (#1,\archYleff) {$\ell = #7$};
+  \node[archstored]        at (#1,\archYstored) {#8 stored blocks};
+}
+
+% ---------------------------------------------------------------- a stage brace
+% #1 bottom block   #2 top block   #3 label   (K1 and growth panels)
+\newcommand{\archbrace}[3]{%
+  \draw[archstage] ([xshift=-0.13cm, yshift=0.03cm]#1.south west)
+                -- ([xshift=-0.13cm, yshift=-0.03cm]#2.north west);
+  \node[archstagelab] at
+    ($([xshift=-0.25cm]#1.south west)!0.5!([xshift=-0.25cm]#2.north west)$) {#3};
+}
+
+% ================================================================ the picture
+\begin{tikzpicture}
+
+% ---- Vanilla: a dense stack, no stage split, no operator, no anchor.
+\renewcommand{\archBaseY}{1.84}
+\archpanel{0}{van}{Vanilla}{archVan}{}{%
+  archFill/0/0, archFill/0/0, archFill/0/0,
+  archFill/0/0, archFill/0/0, archFill/0/0}{6}{6}
+
+% ---- K1: the core applied once, but the boundary operator kept.
+\renewcommand{\archBaseY}{1.68}
+\archpanel{\archPitch}{k1}{\Kone}{archK1}{($K=1$, boundary operator)}{%
+archFill/0/0, archFill/0/0, archCoreA/1/0, archCoreA/2/1,
+  archFill/0/0, archFill/0/0}{6}{6}
+
+% ---- K2: the SAME two core blocks applied twice (one stored core).
+\renewcommand{\archBaseY}{1.12}
+\archpanel{2*\archPitch}{k2}{\Ktwo}{archK2}{}{%
+  archFill/0/0, archFill/0/0, archCoreA/1/0, archCoreA/2/1,
+  archCoreA/1/0, archCoreA/2/1, archFill/0/0, archFill/0/0}{8}{6}
+
+% ---- Dep: the identical graph, but the second pass owns its weights.
+\renewcommand{\archBaseY}{1.12}
+\archpanel{3*\archPitch}{dep}{\Dep}{archDep}{(untied \Ktwo)}{%
+  archFill/0/0, archFill/0/0, archCoreA/1/0, archCoreA/2/1,
+  archCoreB/3/0, archCoreB/4/1, archFill/0/0, archFill/0/0}{8}{8}
+
+% ---- the prelude / core / coda split, named once, on the K1 panel only.
+\archbrace{k1-1}{k1-2}{prelude}
+\archbrace{k1-3}{k1-4}{core}
+\archbrace{k1-5}{k1-6}{coda}
+
+% ---- Growth architectures: each stack is the post-growth K=4 forward graph.
+%      Rows 7--10 are inactive before the transition; the brace makes that
+%      temporal distinction visible without drawing a second copy of the model.
+\renewcommand{\archBaseY}{0}
+
+% ---- K2 Grow: two additional applications, no additional stored weights.
+\archpanel{4*\archPitch}{k2g}{\KtwoGrow}{archGrowK2}{(tied)}{%
+  archFill/0/0, archFill/0/0,
+  archCoreA/1/0, archCoreA/2/1, archCoreA/1/0, archCoreA/2/1,
+  archCoreA/1/0, archCoreA/2/1, archCoreA/1/0, archCoreA/2/1,
+  archFill/0/0, archFill/0/0}{8\!\to\!12}{6}
+
+% ---- Dep Grow: the dormant copies are activated, copy-initialized, and then
+%      trained independently, hence distinct labels and colors after growth.
+\archpanel{5*\archPitch}{depg}{\DepGrow}{archGrowDep}{(copy, then untie)}{%
+  archFill/0/0, archFill/0/0,
+  archCoreA/1/0, archCoreA/2/1, archCoreB/3/0, archCoreB/4/1,
+  archCoreC/5/0, archCoreC/6/1, archCoreD/7/0, archCoreD/8/1,
+  archFill/0/0, archFill/0/0}{8\!\to\!12}{12}
+
+\archbrace{k2g-7}{k2g-10}{after growth}
+\archbrace{depg-7}{depg-10}{after growth}
+
+% ---- one legend line under all six panels.
+\node[anchor=base, font=\small, text=archInk] at (2.5*\archPitch,\archYlegend)
+  {$\oplus$:\; $h \leftarrow \mathrm{Norm}(h) + \alpha e$\qquad\qquad
+   $e$: prelude output};
+
+\end{tikzpicture}

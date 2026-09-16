@@ -1,0 +1,677 @@
+{
+  "status": "pass",
+  "scope": "Original paper analysis versus migrated offline code, all listed numeric outputs exactly equal in the same NumPy environment. No image pixel equality intended: palette and output layout changed.",
+  "numpy": "2.2.6",
+  "checks": [
+    {
+      "check": "Figure8 all measured fresh-data ladders",
+      "status": "exact match",
+      "numeric_output_sha256": "835b55fe87c5438f75fb59a14a7716dec072543e0e330035076aecd0ac4764f0"
+    },
+    {
+      "check": "Figure8 tied budget 8.4612e+17 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "3c21ab5f3b5476834d0ab67bd1aaff947fac28286d71a4e847427b15c6e074e9"
+    },
+    {
+      "check": "Figure8 tied budget 1.41945e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "82cf79bf713bbb95cd86649c502620a3cdaadd798793d80cf3023b8245259863"
+    },
+    {
+      "check": "Figure8 tied budget 2.38126e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "868425a6f1b1e245f403aef2818ae131e73eea0b241a27d41e7e016498e756e5"
+    },
+    {
+      "check": "Figure8 tied budget 3.99479e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "d90a73f317e3828fcdceef92d61e4c34e7bf0e6942365aea261bec3673c93473"
+    },
+    {
+      "check": "Figure8 tied budget 6.70164e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "7ed54a0ca4076425bb97539849683ab5f71ef7525e544d83acbd076658c5efe3"
+    },
+    {
+      "check": "Figure8 untied budget 8.4612e+17 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "b5f528c838ea8ccf88440c8c127da4a7a997751f1e7abb37a1a987f6340521f4"
+    },
+    {
+      "check": "Figure8 untied budget 1.41945e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "711f377a3d8d20044b4d2cd186ef9f1d21c6906040dd541e46bf6853ab5cbcd6"
+    },
+    {
+      "check": "Figure8 untied budget 2.38126e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "8cdc6aa0c7d7c23cea9c3cabbf50da945e4d1571259c98dca873b0ea70ce8483"
+    },
+    {
+      "check": "Figure8 untied budget 3.99479e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "6f5a557407675bac0cb37b5251dfb4b3bc3e7bc5ec902bda3cc0dc4243abd3b5"
+    },
+    {
+      "check": "Figure8 untied budget 6.70164e+18 interpolation and optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "34b7a64d1ea777ff95507345c216fa77d9683325861c7396de22faae26a20dc0"
+    },
+    {
+      "check": "Figure7 shell measured data",
+      "status": "exact match",
+      "numeric_output_sha256": "d31570251b2bae0517a7fb6dc40135fb003a62d0f8775124e18457dc32430f60"
+    },
+    {
+      "check": "Figure7 shell hull and frontier regret",
+      "status": "exact match",
+      "numeric_output_sha256": "ad5e2cd8da6b85a5944261b4e9b49385bf2eeae01172df7f13ea7ca467f82ceb"
+    },
+    {
+      "check": "Figure7 KL effective depths",
+      "status": "exact match",
+      "numeric_output_sha256": "f3d64126a733a16bfb1e349dff5047b151d3ba87fb625afc6d3b0224a3d397da"
+    },
+    {
+      "check": "Figure9 measured rows",
+      "status": "exact match",
+      "numeric_output_sha256": "9f74f77638f54e43af35ad287cef4d5ef6c4d73444aefbae7c36f321939ed409"
+    },
+    {
+      "check": "Figure9 budget assignments",
+      "status": "exact match",
+      "numeric_output_sha256": "f7547196fbb3e7eabb4914c3bf96350045feea286544533fd456adda391bd031"
+    },
+    {
+      "check": "Figure9 all recurrence fits",
+      "status": "exact match",
+      "numeric_output_sha256": "42f7f27b939029d12c6b4081451117b492d6738909869474bc474a419005f0b1"
+    },
+    {
+      "check": "Figure9 fitted TPP and expansion points",
+      "status": "exact match",
+      "numeric_output_sha256": "dbbb1f823ce7d4ead415b16bdd818ba712c480c04d666cc35e5db443489033b2"
+    },
+    {
+      "check": "Figure10 growth rows",
+      "status": "exact match",
+      "numeric_output_sha256": "e022d6ab1b297d81e2a4b5b50876d78e4099313b3efb0e9c32b4a49b3b31839c"
+    },
+    {
+      "check": "Figure10 every fitted growth optimum",
+      "status": "exact match",
+      "numeric_output_sha256": "dd875cfbd661ce3da4de26ec3bf23f387e2c6b7ce961e93a7292044be3dc9e8f"
+    },
+    {
+      "check": "Figure13 all nine diagonal fits",
+      "status": "exact match",
+      "numeric_output_sha256": "5e93efbd7e43d0525d14f6673f3d2a82d801ea0184de5f29131db5dc79f7f592"
+    },
+    {
+      "check": "Figure7 stored TPP growth measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "73381a5feda690ff730b0977d9482da874013020ae6e4a73df0f68b3fb63070e"
+    },
+    {
+      "check": "Figure7 stored TPP growth fitted bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "677ba8d5efdbb4564afb59b6ad02044a3bc5de8b3e19eda71e46676d89d6e9b9"
+    },
+    {
+      "check": "Figure7 stored TPP controls measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "6412a027f132249b3173b3e3d1fe0821a711b0e2232f1d94f6c87e817fa35c18"
+    },
+    {
+      "check": "Figure7 stored TPP controls fitted bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "39104b48abbbc219886323a8764cd5f879325a104560ad9b4ca4220fcd82f27a"
+    },
+    {
+      "check": "Figure10d k2 growth measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "a443aacb82bcb011839b8586e0c5270a7b0cb35137f21b68efd56bb2e0e18473"
+    },
+    {
+      "check": "Figure10d k2 growth bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "6158521d25d3921747fe21215846381d3c7eb304322d3f5c2f689309f542c00c"
+    },
+    {
+      "check": "Figure10d k2 controls measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "7227b44c9d9f3f1dd02e5ba314cf3efe28ca665a22adfae1198e15f2a164f7f0"
+    },
+    {
+      "check": "Figure10d k2 controls bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "1ef407659fc7ec83c7a973c38b56e8389116d3986d6b3256842856503c819dd7"
+    },
+    {
+      "check": "Figure10d dep growth measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "9769cca8ffc6827cf83805b5e2c1f9c1358e3e51a1f757cf6b5c049aa63da173"
+    },
+    {
+      "check": "Figure10d dep growth bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "978797f1709a34b4d88d6c95581c554f0aec6a4af6cf3289cc65b2583d37e503"
+    },
+    {
+      "check": "Figure10d dep controls measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "3939c4513e646a1803f1e75619e3732532502f79ce173f4a141b86ffadaeda21"
+    },
+    {
+      "check": "Figure10d dep controls bowls",
+      "status": "exact match",
+      "numeric_output_sha256": "3c2e35c8169ed3873c96d5aa99e24c0566953522cfb6a70386815a1d8ece38a1"
+    },
+    {
+      "check": "Figure10d all ablation compute multipliers",
+      "status": "exact match",
+      "numeric_output_sha256": "e4598c5662303ca112fd7d1beeea1a287c9f9bb766f992d028bd014c417824c0"
+    },
+    {
+      "check": "Figure11 van chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "879725fa5ad4656facb2ca16614ee0910a43c81919fd9b5b3743ae460eda39ff"
+    },
+    {
+      "check": "Figure11 van-d11 chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "520d478ee74232b014c263d23bba455dac10a53bf65e9eb2e180a405dc0d71c4"
+    },
+    {
+      "check": "Figure11 k1 chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "da33ac8dbd406ed5c702d524a22035dd02fe90ec7c1687bc6d8a95e657393e78"
+    },
+    {
+      "check": "Figure11 k2 chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "ce74879cdcd0440f3d92c55eb2b107461e19d5ee5ccd1612ff74ec1be5b24e75"
+    },
+    {
+      "check": "Figure11 dep chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "e7ae42e018ede03aac51078540be0c6fd901f1f438c5fc884fb3e847be6fdbf3"
+    },
+    {
+      "check": "Figure11 dep-no-coda-inj chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "c1fa5a3c5484c1a900c05e2a77b12cae1191dcae244bb4b8f7b8935c0be16823"
+    },
+    {
+      "check": "Figure11 k2-no-coda-inj chain trajectory",
+      "status": "exact match",
+      "numeric_output_sha256": "0f82bb31c13c18fbad40d932f5f6579663ea7dcf8fa015fc8841aacc4a1c21f8"
+    },
+    {
+      "check": "Figure12 measured rows",
+      "status": "exact match",
+      "numeric_output_sha256": "74551ca0b7866941db63487ee5c5f3ebc510f1fe11d654e989423a38d3138f47"
+    },
+    {
+      "check": "Figure12 van bowls and scaling fits",
+      "status": "exact match",
+      "numeric_output_sha256": "a66e9893d4e8ee5db69c637d825e779dfa28606f721e05574acbfb019d905656"
+    },
+    {
+      "check": "Figure12 deep_van bowls and scaling fits",
+      "status": "exact match",
+      "numeric_output_sha256": "1dfe3659dbf032b8071f55ecca277941f1c38abd40acefe0fba8cf5fc658712b"
+    },
+    {
+      "check": "Figure12 k1 bowls and scaling fits",
+      "status": "exact match",
+      "numeric_output_sha256": "c6ba225cf92f3bc0804beb0a3667cad1f08eb43015d408e6a49cfc0385d0b5dc"
+    },
+    {
+      "check": "Figure12 k2 bowls and scaling fits",
+      "status": "exact match",
+      "numeric_output_sha256": "f1de5b8f85da6f6e77168f98919bb79109f63c1a35d35607c1096029d916cc03"
+    },
+    {
+      "check": "Figure12 dep bowls and scaling fits",
+      "status": "exact match",
+      "numeric_output_sha256": "aef7e093cef87463fdacbd9c40b5cd17f9094e2e8be0f552d335454b21bf21ef"
+    },
+    {
+      "check": "Figure14a complete hyperparameter slices",
+      "status": "exact match",
+      "numeric_output_sha256": "7191aac1e7fb43fa21a3897b0b86574becd78e74a270ddbb1b15360fcb6cb81c"
+    },
+    {
+      "check": "Figure14b Van scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "e2e8dcb97288ede8ef768fc8c6d321633296a945b791f534090c80358721fe3f"
+    },
+    {
+      "check": "Figure14b Van glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "82f45b5c0b68577320692a351e3c1a774beffec78cc9429269a9b8fa5bc0f0d1"
+    },
+    {
+      "check": "Figure14b Van glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "5b1c3323b68d93e813da15e8c7b35555507ebe923f85f0d1f22fc4234fc89ee7"
+    },
+    {
+      "check": "Figure14b Van glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "e85abb88f89943f87a6f2ecedf6d4150673780908d3eeddb8bb3da2ba0650278"
+    },
+    {
+      "check": "Figure14b Van om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "db7d77b4c618b73e96b24d5dbd82116facd76b01d6f0c29a7ef8c5bc603dcb9b"
+    },
+    {
+      "check": "Figure14b Van om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "2ac7c5672c074960558e32976ca018feceea97eed4c439dac35b319be5b7a652"
+    },
+    {
+      "check": "Figure14b Van om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "f3c558b9957211e12b2514d3dfb8452b7a516abbf38fadcb4084da2fc88a70f4"
+    },
+    {
+      "check": "Figure14b Van rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "c57ac2a5ef60d68a89fb1e32842a176f03228c3d7d5fd33ad8975a38284dbb46"
+    },
+    {
+      "check": "Figure14b Van rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "714b94b544e0d08bc053f94634fd1022fb238274af69129df7010c54853caa7b"
+    },
+    {
+      "check": "Figure14b Van rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "79c73ab61bfe7504c3a9b9f2ad0b6711513b4a4735e7409aafed26d0986ec415"
+    },
+    {
+      "check": "Figure14b Van wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "3c5c446b4112575998d2371d3d40c2a55271eaaa83ae2ae0164a68dd31cd85cf"
+    },
+    {
+      "check": "Figure14b Van wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "0d5ad56f6c6d918ec79a5bb86156b9a4a6005369234c74631c70692d33580a94"
+    },
+    {
+      "check": "Figure14b Van wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "b7cf0939cd353ae9c83dacf455a3905164e4aa265ad9728a71e20f4c443e404f"
+    },
+    {
+      "check": "Figure14b Van constant measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "78efd7a28b4cc133d2328ef2bff5fe48d1a2b61c386febc656dee8e94d7e8063"
+    },
+    {
+      "check": "Figure14b Van GLR exponent",
+      "status": "exact match",
+      "numeric_output_sha256": "18cb27515aaa0c8053274640f1698672c094bf1aa75432b620db3995ea19793f"
+    },
+    {
+      "check": "Figure14b K1 scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "de1db3fb87c3ce5f576cdaee10517c5d4bba9013c871d516bce928629eff005a"
+    },
+    {
+      "check": "Figure14b K1 glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "6b3a8445c501460c65f043164d6e0bf67c4e3db7012a42872060978c292852cc"
+    },
+    {
+      "check": "Figure14b K1 glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "16896c49128aaa8eb5fb969c7de15af0a17927e909a925a10ae7f5be401c6231"
+    },
+    {
+      "check": "Figure14b K1 glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "19c93873d336ed7a7dae12cf979ccc7a5ec7d02a7962bd8bb87fa0278bbc8595"
+    },
+    {
+      "check": "Figure14b K1 om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "bebfaed7410f9a245fcb7a620669a89cee650f1052b80da8f5d952e440f62bbb"
+    },
+    {
+      "check": "Figure14b K1 om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "4426c0002ef11595766480db9a35c078dee42632b5b80ae25aa3fae44f012990"
+    },
+    {
+      "check": "Figure14b K1 om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "9c5fc968a6289f0fd3ff9483089ff194f7524ff29f99c7ee073edf966c44e386"
+    },
+    {
+      "check": "Figure14b K1 rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "7d4eb1311ec53920724c5491be8ec156db04937ae12b2b7e41ea56fd60aa2f9a"
+    },
+    {
+      "check": "Figure14b K1 rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "433888d884a7d6ae0a6ebb52916bae68d8013e80909f189a25f0aba271e77268"
+    },
+    {
+      "check": "Figure14b K1 rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "c4c0b04c6a2c541af74be1d03bfb7055c3da108036bbc04a2cd87a17c6f8eed1"
+    },
+    {
+      "check": "Figure14b K1 wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d993bcdf2aebbae10affa3bc3cc2de59fcb84a60cc310b0449e3395b990c1ae2"
+    },
+    {
+      "check": "Figure14b K1 wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "59cc6827c2bf8a1a330521cfb87320bf3e73d1a343eccfb4926a573ad670ab35"
+    },
+    {
+      "check": "Figure14b K1 wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "db7d40d53be56f0c3cbab67f40738b75abef979ce2313830758bd6d9b0e38959"
+    },
+    {
+      "check": "Figure14b K1 constant measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "45ad652ee474d8e256157d5ce11b74515faf995fd229402acdb2be63dc599752"
+    },
+    {
+      "check": "Figure14b K1 GLR exponent",
+      "status": "exact match",
+      "numeric_output_sha256": "d3d0bb38dce1609b645566f1be0d885cdc3730768c20f8b30e91719560ed0962"
+    },
+    {
+      "check": "Figure14b K2 scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "688717c72c818c8191140576c679b577ae18df4995720e66a1422d21a54513e6"
+    },
+    {
+      "check": "Figure14b K2 glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "f287052d68204552d9045969556ff4f68e56a8a4bdb0bfefae0486c381cae457"
+    },
+    {
+      "check": "Figure14b K2 glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d28f73bf5fa3296f03f16fb4b9a0b4272022b8fde9c4b1d24399edecb9cdbdeb"
+    },
+    {
+      "check": "Figure14b K2 glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "7a2c8a30448d220416241bb23df52f7b7e5d1cb81e088fbc31cc102d7aa86def"
+    },
+    {
+      "check": "Figure14b K2 om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "50f08a51ed9d8b0db25ce64363538b8519c078ad735dc46d3600b62167880e27"
+    },
+    {
+      "check": "Figure14b K2 om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "dbacc83dd544ac5bc2d6b48f37f2175ed66e49efeeb2245732f339e5d3228e90"
+    },
+    {
+      "check": "Figure14b K2 om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "a9ae95aaabe4deb0b43b4866d648a038388a0bb3d03a0b10c0ebab68977926e6"
+    },
+    {
+      "check": "Figure14b K2 rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "cb32d763922afac976a887acd833804508898ce2da67f2b8efbaba13fb6db233"
+    },
+    {
+      "check": "Figure14b K2 rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "62cd734a3e342eb03587d147900d09267ed1e412140df04be39ebc2aa81f8c00"
+    },
+    {
+      "check": "Figure14b K2 rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "0d293d57f059d8d595cf6066832896eaec326f48bfca18a9df1a18faa41fefe5"
+    },
+    {
+      "check": "Figure14b K2 wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d9fca46a10583f66ae874ad3cd20ea68417c65761f383869d38847200e1a1c1a"
+    },
+    {
+      "check": "Figure14b K2 wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "f64468b13b274f5ab2c2fb46147a6ba64a20c99a47b6cda75c1883fc427f49e4"
+    },
+    {
+      "check": "Figure14b K2 wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "8415563ed9a6629ea585e93101460ed3a6889c1e3d7bfb715f5b92a176a3e7e5"
+    },
+    {
+      "check": "Figure14b K2 constant measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "3b237025f70f7c332820e302f4e35b1ba4766188c8aae8ab3e51163cf9070978"
+    },
+    {
+      "check": "Figure14b K2 GLR exponent",
+      "status": "exact match",
+      "numeric_output_sha256": "889acbefb19fa9f9e408e534a0cbf6629cda491ebcec16e3cc0358134a7330d1"
+    },
+    {
+      "check": "Figure14b Dep scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "9488c893b7fddad824b8bfaa36a8a9559b7bd75c972c9aeb5bcf9840bb1d76b0"
+    },
+    {
+      "check": "Figure14b Dep glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "ca2e07fe58c1d18043bf63f9f38ead5d0a02fca80f1bb45e4a875793e850eceb"
+    },
+    {
+      "check": "Figure14b Dep glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "0bc957b0fc2e35d84931d5baf2aad77c8dc144784b34d76c7fb4d449939117f9"
+    },
+    {
+      "check": "Figure14b Dep glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "afb63578b027b367b988ac60e27b6b2ed6ed82983554ff107cb75258a1655f91"
+    },
+    {
+      "check": "Figure14b Dep om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "263259985edade8a6cd8a3580dfd372413c0e9d31efc97902caeeda9fe295515"
+    },
+    {
+      "check": "Figure14b Dep om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "149cef2b8e17475b21c0c1084ccb70a32bd39a3ad0821a09c65dde5c445fd858"
+    },
+    {
+      "check": "Figure14b Dep om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "73bd1e01947dabd5f0507fcb142100e260e398edae44aadc97621a9eb6b0ed71"
+    },
+    {
+      "check": "Figure14b Dep rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "3b865896a323e25f1b458262d22c921f062d44681394d59e4c3937e0c2af289d"
+    },
+    {
+      "check": "Figure14b Dep rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "14c1ebb4c62c4be7220e8815fb24401b24d1704a1df6fde4e323254ae9432069"
+    },
+    {
+      "check": "Figure14b Dep rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "2b6d77a426c268f58abafbb2774c50fb97be55206be0b5c56125a8ab0d880d0f"
+    },
+    {
+      "check": "Figure14b Dep wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "ce8a54f5c86741f331cefd8b864c3699b1970cab117165a942eacfc50a4c8e33"
+    },
+    {
+      "check": "Figure14b Dep wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "9304688c509b9c881405d14eba8407e687525e0036d87aab98c1308cdc1bbeee"
+    },
+    {
+      "check": "Figure14b Dep wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "92b41d8b9ec241ba01f377d926a2b6ab652224c0fae4d511547d5af1fff4efa7"
+    },
+    {
+      "check": "Figure14b Dep constant measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "c4e6a8cdc3c14cd51bc591c0f15550e1863f6033ec6898f708e5ea8584f4479b"
+    },
+    {
+      "check": "Figure14b Dep GLR exponent",
+      "status": "exact match",
+      "numeric_output_sha256": "50d9e272dbb33e3390f4fee88e30be51a58641f60e2f08b5a12a5880175e9fd5"
+    },
+    {
+      "check": "Figure14b K2 Grow scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "95108219342836634bb3dc5689d8e89130aade445547cbd3ac44f4b13167e7ef"
+    },
+    {
+      "check": "Figure14b K2 Grow glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "816155cd875d8c9948891de1b9bf41098b7a2f96e192c0fc33ee166b62485655"
+    },
+    {
+      "check": "Figure14b K2 Grow glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d644c8ef2550f6f9a6d4966a1f79694c34074c577dbd8c7e12549fe9f37305e5"
+    },
+    {
+      "check": "Figure14b K2 Grow glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d2508125befcf49a3aa01480a2c699ea2a03c7a84dd83a5c1b27df1a8fcaa7b4"
+    },
+    {
+      "check": "Figure14b K2 Grow om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "dec8b3ce02ec92c7d15cb55d3879099b2cb34313b2846c1efc2057940f5cdc74"
+    },
+    {
+      "check": "Figure14b K2 Grow om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "ba329e1e31b0a2cf04f52337072affb2a61abee6c5506cf9293fd7ed23bade00"
+    },
+    {
+      "check": "Figure14b K2 Grow om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "abafba5fc0974321e21514ada262fdb47e4d8c3d50ec17fd37ee3efea0172a41"
+    },
+    {
+      "check": "Figure14b K2 Grow rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "4ad4ad49a51081eb0aa230e7b9b54e2190b2203ca6947debc2a569de002b3f41"
+    },
+    {
+      "check": "Figure14b K2 Grow rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "21843d734b0030e97a25b8105924e01821dc75f8c4a9353739e4c54901d184b4"
+    },
+    {
+      "check": "Figure14b K2 Grow rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "b972fb1b5ebdff47e11c85de9649221cfef3afff85741a8ed030a429ac2946f2"
+    },
+    {
+      "check": "Figure14b K2 Grow wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "9b8a78be4f6d39c4d40f0a294c404d6ea31978cfb7db406ae7557aead6bd2267"
+    },
+    {
+      "check": "Figure14b K2 Grow wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "4b681560403a713854bd22bebbb53ffedbd165cdc85521731097ee006b000e6c"
+    },
+    {
+      "check": "Figure14b K2 Grow wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d7808ccd0c5b1cb510d58e3f6f2dbcc92dd4bb916360020c2f96a4385e8ea226"
+    },
+    {
+      "check": "Figure14b Dep Grow scaled measurements",
+      "status": "exact match",
+      "numeric_output_sha256": "3c1b4514426a45258cdb4a9c2d3ea0889e957e0e262f116824253baef8325ba4"
+    },
+    {
+      "check": "Figure14b Dep Grow glr d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "40665eefeae5d8e9096679395c5b74c999c34b3e3dd3a982b5b72e86336919b1"
+    },
+    {
+      "check": "Figure14b Dep Grow glr d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "6ef777d7d45f70f2e0a44f9cd864178f79f2044bf00676acd817a0144943f473"
+    },
+    {
+      "check": "Figure14b Dep Grow glr d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "b730ddbd988e13f2bd1752b74baec38157674490b219aba3aec29d945fcd809c"
+    },
+    {
+      "check": "Figure14b Dep Grow om d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "b3e1012d2680188f05ded330f27e3a1afc5bedae2dc2d2cc29674531920420ab"
+    },
+    {
+      "check": "Figure14b Dep Grow om d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "4996fc58f33cbed629ba330db4d55f5b62da6dfb3ec74c1b30a0b9657f9f4c5b"
+    },
+    {
+      "check": "Figure14b Dep Grow om d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "5059fa39fe16062aaeb6bbc14591d3a0a350c2c027fe51cc6671ba143bca84ae"
+    },
+    {
+      "check": "Figure14b Dep Grow rm d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "fc5367832c842c99614e06e7890de78495752e68518d1b58b22306dedf6cb829"
+    },
+    {
+      "check": "Figure14b Dep Grow rm d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "a9ff2fcd101c67374803efda518c3bc83e2548e6dff516596c35fbbc7764025b"
+    },
+    {
+      "check": "Figure14b Dep Grow rm d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "ed91cad3e98c9c731659cce3912694088cb4084a7eb71c50c3dcfb5502d9090c"
+    },
+    {
+      "check": "Figure14b Dep Grow wd d8 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "d9bec987782a36ffe391765b05b88ef88199310d22b4787999e05f3ec72683ae"
+    },
+    {
+      "check": "Figure14b Dep Grow wd d9 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "63b8fe2b25b8c410e93791c147c10a5c7e1a197825d1719d60dbcea37e03169f"
+    },
+    {
+      "check": "Figure14b Dep Grow wd d10 scaled bowl",
+      "status": "exact match",
+      "numeric_output_sha256": "26e6736ea417b80f4b7299a87293731239d21ce10c79ab37acde878ce67a503b"
+    }
+  ]
+}

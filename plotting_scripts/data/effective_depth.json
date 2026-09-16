@@ -1,0 +1,291 @@
+{
+ "ladders": {
+  "deep_vanilla": [
+   {
+    "depth": 6,
+    "compute_flops": 5.197356331664671e+17,
+    "effective_depth": 6.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.8988231620286218e+18,
+    "effective_depth": 9.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 5.735252401355489e+18,
+    "effective_depth": 11.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 1.2697375025922048e+19,
+    "effective_depth": 12.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 2.9872355691567514e+19,
+    "effective_depth": 15.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 6.378078935381233e+19,
+    "effective_depth": 18.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 1.1142942548863589e+20,
+    "effective_depth": 20.0
+   }
+  ],
+  "untied_2": [
+   {
+    "depth": 6,
+    "compute_flops": 5.197356331664671e+17,
+    "effective_depth": 7.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.8988231620286218e+18,
+    "effective_depth": 10.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 5.735252401355489e+18,
+    "effective_depth": 13.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 1.2697375025922048e+19,
+    "effective_depth": 16.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 2.9872355691567514e+19,
+    "effective_depth": 19.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 6.378078935381233e+19,
+    "effective_depth": 22.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 1.1142942548863589e+20,
+    "effective_depth": 24.0
+   }
+  ],
+  "untied_grow": [
+   {
+    "depth": 6,
+    "compute_flops": 6.990536434369167e+17,
+    "effective_depth": 11.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 2.5422449659588116e+18,
+    "effective_depth": 16.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 7.663700958227988e+18,
+    "effective_depth": 22.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 1.6956045664972702e+19,
+    "effective_depth": 24.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 3.986691327554224e+19,
+    "effective_depth": 29.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 8.509693786035585e+19,
+    "effective_depth": 34.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 1.486435035832312e+20,
+    "effective_depth": 36.0
+   }
+  ],
+  "operator_1": [
+   {
+    "depth": 6,
+    "compute_flops": 3.902066425803571e+17,
+    "effective_depth": 6.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.267223787082875e+18,
+    "effective_depth": 7.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 3.510828483729162e+18,
+    "effective_depth": 10.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 8.091424558361346e+18,
+    "effective_depth": 11.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 1.7973183877144904e+19,
+    "effective_depth": 13.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 3.672570659003066e+19,
+    "effective_depth": 15.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 6.686787237838848e+19,
+    "effective_depth": 17.0
+   }
+  ],
+  "loop_2": [
+   {
+    "depth": 6,
+    "compute_flops": 4.647766432363315e+17,
+    "effective_depth": 8.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.599330667588485e+18,
+    "effective_depth": 10.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 4.6073638978112717e+18,
+    "effective_depth": 13.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 1.0330315469881344e+19,
+    "effective_depth": 15.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 2.355047886099579e+19,
+    "effective_depth": 18.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 4.906791993833895e+19,
+    "effective_depth": 21.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 8.72400211962495e+19,
+    "effective_depth": 23.0
+   }
+  ],
+  "loop_grow": [
+   {
+    "depth": 6,
+    "compute_flops": 5.453049092143841e+17,
+    "effective_depth": 12.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.8708922541895844e+18,
+    "effective_depth": 16.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 5.381730483736412e+18,
+    "effective_depth": 21.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 1.206460951581583e+19,
+    "effective_depth": 23.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 2.7490458945516995e+19,
+    "effective_depth": 28.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 5.726577955873122e+19,
+    "effective_depth": 33.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 1.0180731839142534e+20,
+    "effective_depth": 35.0
+   }
+  ],
+  "vanilla": [
+   {
+    "depth": 6,
+    "compute_flops": 3.252671429392466e+17,
+    "effective_depth": 5.0
+   },
+   {
+    "depth": 8,
+    "compute_flops": 1.0557507729327391e+18,
+    "effective_depth": 7.0
+   },
+   {
+    "depth": 10,
+    "compute_flops": 2.925844427345756e+18,
+    "effective_depth": 9.0
+   },
+   {
+    "depth": 12,
+    "compute_flops": 6.743807526187303e+18,
+    "effective_depth": 11.0
+   },
+   {
+    "depth": 14,
+    "compute_flops": 1.4978013660583035e+19,
+    "effective_depth": 12.0
+   },
+   {
+    "depth": 16,
+    "compute_flops": 3.0604755491692216e+19,
+    "effective_depth": 14.0
+   },
+   {
+    "depth": 18,
+    "compute_flops": 5.572393345713439e+19,
+    "effective_depth": 15.0
+   },
+   {
+    "depth": 20,
+    "compute_flops": 1.006362789699335e+20,
+    "effective_depth": 17.0
+   }
+  ]
+ },
+ "multi_epoch": {
+  "compute_flops": [
+   8.4612e+17,
+   1.419447e+18,
+   2.381258e+18,
+   3.994787e+18,
+   6.701636e+18
+  ],
+  "operator_1_tuned_wd": [
+   5.652694907496252,
+   7.469253315705158,
+   8.875586267467536,
+   11.223585405591674,
+   13.581345919638373
+  ],
+  "scale_loop_count": [
+   5.652694907496252,
+   9.09279687858023,
+   11.521953321971692,
+   15.932694570055961,
+   17.65968973132597
+  ]
+ }
+}

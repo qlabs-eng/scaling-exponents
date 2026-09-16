@@ -1,0 +1,401 @@
+{
+  "van": [
+    {
+      "compute": 3.252671429392466e+17,
+      "loss": 3.560862089458265,
+      "depth": 6,
+      "parameters": 119734272,
+      "effective_depth": 6.0,
+      "width": 768,
+      "tokens": 598736896
+    },
+    {
+      "compute": 1.0557507729327391e+18,
+      "loss": 3.329581009714227,
+      "depth": 8,
+      "parameters": 205783040,
+      "effective_depth": 8.0,
+      "width": 1024,
+      "tokens": 1028653056
+    },
+    {
+      "compute": 2.925844427345756e+18,
+      "loss": 3.156174509148849,
+      "depth": 10,
+      "parameters": 331939840,
+      "effective_depth": 10.0,
+      "width": 1280,
+      "tokens": 1659895808
+    },
+    {
+      "compute": 6.743807526187303e+18,
+      "loss": 3.0292470831620064,
+      "depth": 12,
+      "parameters": 494272512,
+      "effective_depth": 12.0,
+      "width": 1536,
+      "tokens": 2471493632
+    },
+    {
+      "compute": 1.4978013660583035e+19,
+      "loss": 2.918957358912418,
+      "depth": 14,
+      "parameters": 726204416,
+      "effective_depth": 14.0,
+      "width": 1792,
+      "tokens": 3631218688
+    },
+    {
+      "compute": 3.0604755491692216e+19,
+      "loss": 2.825931950619346,
+      "depth": 16,
+      "parameters": 1028128768,
+      "effective_depth": 16.0,
+      "width": 2048,
+      "tokens": 5140643840
+    },
+    {
+      "compute": 5.572393345713439e+19,
+      "loss": 2.7522952431126644,
+      "depth": 18,
+      "parameters": 1378418688,
+      "effective_depth": 18.0,
+      "width": 2304,
+      "tokens": 6892290048
+    },
+    {
+      "compute": 1.006362789699335e+20,
+      "loss": 2.6834234940378288,
+      "depth": 20,
+      "parameters": 1843527680,
+      "effective_depth": 20.0,
+      "width": 2560,
+      "tokens": 9217507328
+    }
+  ],
+  "k2": [
+    {
+      "compute": 4.647766432363315e+17,
+      "loss": 3.4685002377158716,
+      "depth": 6,
+      "parameters": 119734272,
+      "effective_depth": 8.0,
+      "width": 768,
+      "tokens": 718274560
+    },
+    {
+      "compute": 1.599330667588485e+18,
+      "loss": 3.232275912636205,
+      "depth": 8,
+      "parameters": 205783040,
+      "effective_depth": 11.0,
+      "width": 1024,
+      "tokens": 1234698240
+    },
+    {
+      "compute": 4.6073638978112717e+18,
+      "loss": 3.066159298545436,
+      "depth": 10,
+      "parameters": 331939840,
+      "effective_depth": 14.0,
+      "width": 1280,
+      "tokens": 1991770112
+    },
+    {
+      "compute": 1.0330315469881344e+19,
+      "loss": 2.947298953407689,
+      "depth": 12,
+      "parameters": 494272512,
+      "effective_depth": 16.0,
+      "width": 1536,
+      "tokens": 2965372928
+    },
+    {
+      "compute": 2.355047886099579e+19,
+      "loss": 2.8340823524876644,
+      "depth": 14,
+      "parameters": 726204416,
+      "effective_depth": 19.0,
+      "width": 1792,
+      "tokens": 4357357568
+    },
+    {
+      "compute": 4.906791993833895e+19,
+      "loss": 2.74274364270662,
+      "depth": 16,
+      "parameters": 1028128768,
+      "effective_depth": 22.0,
+      "width": 2048,
+      "tokens": 6168772608
+    },
+    {
+      "compute": 8.72400211962495e+19,
+      "loss": 2.673116583573191,
+      "depth": 18,
+      "parameters": 1378418688,
+      "effective_depth": 24.0,
+      "width": 2304,
+      "tokens": 8270643200
+    }
+  ],
+  "dep": [
+    {
+      "compute": 5.197356331664671e+17,
+      "loss": 3.428604929070724,
+      "depth": 6,
+      "parameters": 133890048,
+      "effective_depth": 8.0,
+      "width": 768,
+      "tokens": 803209216
+    },
+    {
+      "compute": 1.8988231620286218e+18,
+      "loss": 3.1904072008634867,
+      "depth": 8,
+      "parameters": 244318208,
+      "effective_depth": 11.0,
+      "width": 1024,
+      "tokens": 1465909248
+    },
+    {
+      "compute": 5.735252401355489e+18,
+      "loss": 3.019007030286287,
+      "depth": 10,
+      "parameters": 413204480,
+      "effective_depth": 14.0,
+      "width": 1280,
+      "tokens": 2479357952
+    },
+    {
+      "compute": 1.2697375025922048e+19,
+      "loss": 2.907669870476974,
+      "depth": 12,
+      "parameters": 607518720,
+      "effective_depth": 16.0,
+      "width": 1536,
+      "tokens": 3644850176
+    },
+    {
+      "compute": 2.9872355691567514e+19,
+      "loss": 2.7939515364797494,
+      "depth": 14,
+      "parameters": 921174016,
+      "effective_depth": 19.0,
+      "width": 1792,
+      "tokens": 5527044096
+    },
+    {
+      "compute": 6.378078935381233e+19,
+      "loss": 2.7018205743086967,
+      "depth": 16,
+      "parameters": 1336410112,
+      "effective_depth": 22.0,
+      "width": 2048,
+      "tokens": 8018460672
+    },
+    {
+      "compute": 1.1142942548863589e+20,
+      "loss": 2.6378199928685238,
+      "depth": 18,
+      "parameters": 1760624640,
+      "effective_depth": 24.0,
+      "width": 2304,
+      "tokens": 10563878912
+    }
+  ],
+  "k2_grow": [
+    {
+      "compute": 5.453049092143841e+17,
+      "loss": 3.4324810630396794,
+      "depth": 6,
+      "parameters": 119734272,
+      "effective_depth": 12.0,
+      "width": 768,
+      "tokens": 780140544
+    },
+    {
+      "compute": 1.8708922541895844e+18,
+      "loss": 3.2001764397872123,
+      "depth": 8,
+      "parameters": 205783040,
+      "effective_depth": 17.0,
+      "width": 1024,
+      "tokens": 1343750144
+    },
+    {
+      "compute": 5.381730483736412e+18,
+      "loss": 3.0357162074038855,
+      "depth": 10,
+      "parameters": 331939840,
+      "effective_depth": 22.0,
+      "width": 1280,
+      "tokens": 2181038080
+    },
+    {
+      "compute": 1.206460951581583e+19,
+      "loss": 2.9183570460269324,
+      "depth": 12,
+      "parameters": 494272512,
+      "effective_depth": 24.0,
+      "width": 1536,
+      "tokens": 3251634176
+    },
+    {
+      "compute": 2.7490458945516995e+19,
+      "loss": 2.8046457391036186,
+      "depth": 14,
+      "parameters": 726204416,
+      "effective_depth": 29.0,
+      "width": 1792,
+      "tokens": 4769972224
+    },
+    {
+      "compute": 5.726577955873122e+19,
+      "loss": 2.715389050935444,
+      "depth": 16,
+      "parameters": 1028128768,
+      "effective_depth": 34.0,
+      "width": 2048,
+      "tokens": 6789529600
+    },
+    {
+      "compute": 1.0180731839142534e+20,
+      "loss": 2.6445254275673316,
+      "depth": 18,
+      "parameters": 1378418688,
+      "effective_depth": 36.0,
+      "width": 2304,
+      "tokens": 9099018240
+    }
+  ],
+  "k2_grow_random": [
+    {
+      "compute": 5.471555515664302e+17,
+      "loss": 3.435324417917352,
+      "depth": 6,
+      "parameters": 119734272,
+      "effective_depth": 12.0,
+      "width": 768,
+      "tokens": 780140544
+    },
+    {
+      "compute": 1.869764077950075e+18,
+      "loss": 3.2038236919202303,
+      "depth": 8,
+      "parameters": 205783040,
+      "effective_depth": 17.0,
+      "width": 1024,
+      "tokens": 1343750144
+    },
+    {
+      "compute": 5.369896329491251e+18,
+      "loss": 3.043059700413754,
+      "depth": 10,
+      "parameters": 331939840,
+      "effective_depth": 22.0,
+      "width": 1280,
+      "tokens": 2181038080
+    },
+    {
+      "compute": 1.2062234454735716e+19,
+      "loss": 2.922203264738384,
+      "depth": 12,
+      "parameters": 494272512,
+      "effective_depth": 24.0,
+      "width": 1536,
+      "tokens": 3251634176
+    },
+    {
+      "compute": 2.7507906866294292e+19,
+      "loss": 2.8102637843081824,
+      "depth": 14,
+      "parameters": 726204416,
+      "effective_depth": 29.0,
+      "width": 1792,
+      "tokens": 4769972224
+    },
+    {
+      "compute": 5.731193435962579e+19,
+      "loss": 2.719630793521279,
+      "depth": 16,
+      "parameters": 1028128768,
+      "effective_depth": 34.0,
+      "width": 2048,
+      "tokens": 6789529600
+    },
+    {
+      "compute": 1.0171304473920956e+20,
+      "loss": 2.6501822220651725,
+      "depth": 18,
+      "parameters": 1378418688,
+      "effective_depth": 36.0,
+      "width": 2304,
+      "tokens": 9099018240
+    }
+  ],
+  "dep_grow": [
+    {
+      "compute": 6.990536434369167e+17,
+      "loss": 3.3550770408228825,
+      "depth": 6,
+      "parameters": 162201600,
+      "effective_depth": 12.0,
+      "width": 768,
+      "tokens": 957349888
+    },
+    {
+      "compute": 2.5422449659588116e+18,
+      "loss": 3.1303869548596834,
+      "depth": 8,
+      "parameters": 321388544,
+      "effective_depth": 17.0,
+      "width": 1024,
+      "tokens": 1751646208
+    },
+    {
+      "compute": 7.663700958227988e+18,
+      "loss": 2.9624930933902136,
+      "depth": 10,
+      "parameters": 575733760,
+      "effective_depth": 22.0,
+      "width": 1280,
+      "tokens": 2960654336
+    },
+    {
+      "compute": 1.6956045664972702e+19,
+      "loss": 2.850924441688939,
+      "depth": 12,
+      "parameters": 834011136,
+      "effective_depth": 24.0,
+      "width": 1536,
+      "tokens": 4357357568
+    },
+    {
+      "compute": 3.986691327554224e+19,
+      "loss": 2.741565102025082,
+      "depth": 14,
+      "parameters": 1311113216,
+      "effective_depth": 29.0,
+      "width": 1792,
+      "tokens": 6623330304
+    },
+    {
+      "compute": 8.509693786035585e+19,
+      "loss": 2.6508654544228003,
+      "depth": 16,
+      "parameters": 1952972800,
+      "effective_depth": 34.0,
+      "width": 2048,
+      "tokens": 9588703232
+    },
+    {
+      "compute": 1.486435035832312e+20,
+      "loss": 2.58700220208419,
+      "depth": 18,
+      "parameters": 2525036544,
+      "effective_depth": 36.0,
+      "width": 2304,
+      "tokens": 12618563584
+    }
+  ]
+}

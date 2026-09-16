@@ -1,0 +1,14 @@
+# Rebuilt datasets and training artifacts
+/data/
+/runs/
+/wandb/
+/eval_bundle/
+*.pt
+# Python
+__pycache__/
+*.pyc
+.venv/
+/tests/output*/
+# W&B pull cache for the plotting scripts
+/plotting_scripts/data/wandb_runs.json
+/plotting_scripts/data/wandb_loop_grid.json

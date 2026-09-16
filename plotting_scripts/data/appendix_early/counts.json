@@ -1,0 +1,86 @@
+[
+  {
+    "depth": 8,
+    "mode": "loop",
+    "recurrence": 2,
+    "stored": 205783040,
+    "active": 192806912
+  },
+  {
+    "depth": 8,
+    "mode": "loop",
+    "recurrence": 4,
+    "stored": 205783040,
+    "active": 269877248
+  },
+  {
+    "depth": 8,
+    "mode": "dep",
+    "recurrence": 2,
+    "stored": 244318208,
+    "active": 192806912
+  },
+  {
+    "depth": 8,
+    "mode": "dep",
+    "recurrence": 4,
+    "stored": 321388544,
+    "active": 269877248
+  },
+  {
+    "depth": 9,
+    "mode": "loop",
+    "recurrence": 2,
+    "stored": 259227648,
+    "active": 249053184
+  },
+  {
+    "depth": 9,
+    "mode": "loop",
+    "recurrence": 4,
+    "stored": 259227648,
+    "active": 344604672
+  },
+  {
+    "depth": 9,
+    "mode": "dep",
+    "recurrence": 2,
+    "stored": 307003392,
+    "active": 249053184
+  },
+  {
+    "depth": 9,
+    "mode": "dep",
+    "recurrence": 4,
+    "stored": 402554880,
+    "active": 344604672
+  },
+  {
+    "depth": 10,
+    "mode": "loop",
+    "recurrence": 2,
+    "stored": 331939840,
+    "active": 348815360
+  },
+  {
+    "depth": 10,
+    "mode": "loop",
+    "recurrence": 4,
+    "stored": 331939840,
+    "active": 511344640
+  },
+  {
+    "depth": 10,
+    "mode": "dep",
+    "recurrence": 2,
+    "stored": 413204480,
+    "active": 348815360
+  },
+  {
+    "depth": 10,
+    "mode": "dep",
+    "recurrence": 4,
+    "stored": 575733760,
+    "active": 511344640
+  }
+]

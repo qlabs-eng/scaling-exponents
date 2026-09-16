@@ -1,0 +1,21 @@
+[project]
+name = "loop-paper"
+version = "0.1.0"
+description = "Training and evaluation code for the looped-transformer scaling paper"
+requires-python = ">=3.10"
+# torch 2.10.0 from PyPI is the cu128 build (nvidia-*-cu12==12.8.* wheels come with it).
+# FlashAttention-3 arrives via the pinned `kernels` package at runtime; Hopper required.
+dependencies = [
+    "torch==2.10.0",
+    "kernels==0.14.1",
+    "kernels-data==0.14.1",
+    "tiktoken==0.13.0",
+    "wandb==0.27.0",
+    "numpy>=2.0",
+    "matplotlib==3.10.9",
+    "scipy>=1.15",
+    "datasets>=4.0",
+    "pyarrow>=17.0",
+    "huggingface-hub>=1.0",
+    "pyyaml==6.0.3",
+]

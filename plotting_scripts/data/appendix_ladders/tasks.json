@@ -1,0 +1,93 @@
+{
+  "groups": {
+    "world_knowledge": [
+      "arc_challenge",
+      "arc_easy",
+      "bigbench_qa_wikidata",
+      "jeopardy"
+    ],
+    "symbolic_problem_solving": [
+      "agi_eval_lsat_ar",
+      "bigbench_dyck_languages",
+      "bigbench_operators"
+    ],
+    "commonsense_reasoning": [
+      "copa",
+      "openbook_qa",
+      "piqa"
+    ],
+    "language_understanding": [
+      "hellaswag",
+      "hellaswag_zeroshot",
+      "lambada_openai",
+      "winograd",
+      "winogrande"
+    ],
+    "reading_comprehension": [
+      "coqa",
+      "squad"
+    ]
+  },
+  "tasks": [
+    "arc_challenge",
+    "arc_easy",
+    "bigbench_qa_wikidata",
+    "jeopardy",
+    "agi_eval_lsat_ar",
+    "bigbench_dyck_languages",
+    "bigbench_operators",
+    "copa",
+    "openbook_qa",
+    "piqa",
+    "hellaswag",
+    "hellaswag_zeroshot",
+    "lambada_openai",
+    "winograd",
+    "winogrande",
+    "coqa",
+    "squad"
+  ],
+  "categories": {
+    "hellaswag_zeroshot": "language_understanding",
+    "jeopardy": "world_knowledge",
+    "bigbench_qa_wikidata": "world_knowledge",
+    "arc_easy": "world_knowledge",
+    "arc_challenge": "world_knowledge",
+    "copa": "commonsense_reasoning",
+    "piqa": "commonsense_reasoning",
+    "openbook_qa": "commonsense_reasoning",
+    "lambada_openai": "language_understanding",
+    "hellaswag": "language_understanding",
+    "winograd": "language_understanding",
+    "winogrande": "language_understanding",
+    "bigbench_dyck_languages": "symbolic_problem_solving",
+    "agi_eval_lsat_ar": "symbolic_problem_solving",
+    "bigbench_operators": "symbolic_problem_solving",
+    "squad": "reading_comprehension",
+    "coqa": "reading_comprehension"
+  },
+  "labels": {
+    "agi_eval_lsat_ar": "LSAT AR",
+    "arc_challenge": "ARC Challenge",
+    "arc_easy": "ARC Easy",
+    "bigbench_cs_algorithms": "CS Algorithms",
+    "bigbench_dyck_languages": "Dyck Languages",
+    "bigbench_language_identification": "Language Identification",
+    "bigbench_operators": "Operators",
+    "bigbench_qa_wikidata": "QA Wikidata",
+    "bigbench_repeat_copy_logic": "Repeat Copy Logic",
+    "boolq": "BoolQ",
+    "commonsense_qa": "CommonsenseQA",
+    "copa": "COPA",
+    "coqa": "CoQA",
+    "hellaswag": "HellaSwag",
+    "hellaswag_zeroshot": "HellaSwag (zero-shot)",
+    "jeopardy": "Jeopardy",
+    "lambada_openai": "LAMBADA",
+    "openbook_qa": "OpenBookQA",
+    "piqa": "PIQA",
+    "squad": "SQuAD",
+    "winograd": "Winograd",
+    "winogrande": "WinoGrande"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "selected_tasks": [
+    "agi_eval_lsat_ar",
+    "arc_challenge",
+    "arc_easy",
+    "bigbench_dyck_languages",
+    "bigbench_operators",
+    "bigbench_qa_wikidata",
+    "copa",
+    "coqa",
+    "hellaswag",
+    "hellaswag_zeroshot",
+    "jeopardy",
+    "lambada_openai",
+    "openbook_qa",
+    "piqa",
+    "squad",
+    "winograd",
+    "winogrande"
+  ]
+}

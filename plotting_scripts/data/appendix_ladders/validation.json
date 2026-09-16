@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "comparison": "Exact floating-point array equality in the same NumPy/SciPy environment; no tolerance adjustment.",
+  "checks": 589,
+  "scope": [
+    "extracted ladder/downstream points",
+    "all ladder fit coefficients and interpolation multipliers",
+    "both corpora task NLL fits, sigmoids and full/filtered ratio",
+    "corpus Huber fits",
+    "task residual selections and means",
+    "downstream loss Huber fits"
+  ],
+  "numpy": "2.2.6",
+  "inputs": {
+    "constant.json": "c7f53d7148d1fb79a83c968357ed64fc184a477b52f59b18a7dde683415c1409",
+    "downstream.json": "e6e01611c42b8ac2ab5654634d58cde9d88967bed778cced9dca04fe6395c793",
+    "filter.json": "93ad40e782e2795fff825f7fd4c04ee878c063d5c5ad6af5618c561ac79a5459",
+    "fineweb.json": "808fefaffb207037ad028b149148df57942e9440bf24bd83900282aab2551656",
+    "fineweb_edu.json": "8880c1f4fc809d00d40ef2d1c67d87e7a6bcf2f6ce330c05a4e4ed593ee19bd3",
+    "ladders.json": "d3248fa2d4ca073f930fc91d1f4f02cfb8b1faa40a043409b1bc4a89227ff46c",
+    "random.json": "01b9801fc498058935aec9d42f55b9660a15e175a39c89479168011a19bbe258",
+    "recurrence.json": "a52bd6d207ed9c5095dfd56605e6fb6fab367340e722d4ee59eb4ec16f590738",
+    "tasks.json": "9b7c44d2bc44d08f86f2ab3ff111203c144c3b6580c2fa1a154d722fb1526b8a",
+    "timing.json": "c0121b3406007b4ee8a3c2b3ed720824c10566fb94ec258a3c9a9981b717a7be",
+    "width_optimizer.json": "4e8d47c95e34ac4269adb8493358666f96f9199dfebf35fe3c2947a77206a226"
+  }
+}
