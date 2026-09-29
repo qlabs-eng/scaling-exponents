@@ -138,6 +138,10 @@ NNODES=2 NODE_RANK=1 MASTER_ADDR=node0 MASTER_PORT=29500 NPROC_PER_NODE=8 \
 
 </details>
 
+## Reproduce data-constrained scaling
+
+The four scripts in [`data_constrained_scripts/`](data_constrained_scripts/) reproduce the scaling recipes in the third panel of Figure 5: Operator-1 and recurrence scaling, each with fixed or K=1-selected weight decay. They use a 100M-token FineWeb pool for 10 epochs.
+
 ## Evaluate CORE accuracy and NLL
 
 Evaluate a final checkpoint on one H100 GPU:
