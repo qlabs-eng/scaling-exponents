@@ -6,6 +6,8 @@ The repository contains the code for the paper **How Model Growth, Recursion, an
 
 [Figures](#figures) · [Training logs](#public-ladder-runs) · [Checkpoints](#pretrained-checkpoints)
 
+中文论文讲解与批判性实验设计见 [`docs/paper-explainer-zh.md`](docs/paper-explainer-zh.md)。
+
 ## Setup
 
 Use Python 3.10+ and H100 GPUs. The paper's standard ladders use one node with
